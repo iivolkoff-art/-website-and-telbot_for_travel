@@ -1,0 +1,89 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Travel</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="shortcut icon" href="{% static 'travel/img/logo.png' %}" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:900|Open+Sans&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="{% static 'travel/css/main.css' %}">
+</head>
+<body>
+	<header id="header" class="header">
+		<div class="container">
+			<div class="wrapper">
+				<div class="offer">
+					<h1 class="title">
+						Мы организуем отдых о котором вы <span> мечтаете!</span>
+					</h1>
+					<p class="intro">
+						Наше агентство подберет вам билеты, лучший отель и экскурсию по самым знаковым местам города, по доступным ценам.
+					</p>
+					<a href="https://traveling.by" class="btn">Узнать больше</a>
+				</div>
+				<img src="{% static 'travel/img/desktop.png' %}" alt="Code desktop" class="desktop">
+			</div>
+		</div>
+	</header>
+	<section id="learn" class="learn">
+		<div class="container">
+			<h2 class="section-title">Почему именно мы?</h2>
+			<div class="skills">
+				<div class="skill">
+					<img src="{% static 'travel/img/icon1.jpg' %}" alt="imgFirst" class="imgFirst">
+					<h3 class="skill-title">
+						Пунктуальность
+					</h3>
+					<p class="skill-text">
+						Ваши заявки рассматриваются круглосуточно!
+					</p>
+				</div>
+				<div class="skill skill-free">
+					<img src="{% static 'travel/img/icon2.jpg' %}" alt="img" class="img">
+					<h3 class="skill-title">
+						Количество стран
+					</h3>
+					<p class="skill-text">
+						В нашей базе данных храняться более 100 стран!
+					</p>
+				</div>
+				<div class="skill skill-change">
+					<img src= "{% static 'travel/img/icon3.jpg' %}" alt="img" class="img">
+					<h3 class="skill-title">
+						Скорость
+					</h3>
+					<p class="skill-text">
+						Мы подберем вам отдых в кратчайшие сроки!
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="mail" class="mail">
+		<div class="container">
+			<h2 class="section-title">Форма заказа билета</h2>
+			<form action="#" class="form" method="POST">
+				{% csrf_token %}
+				{{ form.name }}
+        		{{ form.mail }}
+        		{{ form.phone_number }}
+        		{{ form.place_of_chill }}
+<!--				<input type="name" placeholder="Имя" name="name" class="input" required><br>-->
+<!--				<input type="email" placeholder="E-mail" name="email" class="input" required><br>-->
+<!--				<input type="number" placeholder="Телефон" name="number" class="input" required><br>-->
+<!--				<input type="place" placeholder="Куда я хочу полететь?" name="place" class="input" required><br>-->
+				<button type="submit" class="btn btn-form">Отправить заявку!</button>
+			</form>
+		</div>
+	</section>
+	<footer id="footer" class="footer">
+		<div class="container">
+			<p class="credits">
+				© Все права защищены мной)
+			</p>
+		</div>
+	</footer>
+</body>
+</html>

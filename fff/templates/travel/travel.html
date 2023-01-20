@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block title %} Travel {% endblock %}
+{% block content %}
+    {% if list_from_db %}
+        {% for item in list_from_db %}
+            <p>{{ item.name }}</p>
+        {% endfor %}
+    {% endif %}
+{% endblock %}
