@@ -6,6 +6,8 @@ To successfully launch the project, you will need to install libraries and enter
 
 ![Image text](page/site.png)
 
+![Image text](page/input.png)
+
 The TelegramBot folder contains files for the bot, and the fff-django folder contains files
 
 ![Image text](page/telbot.png)
