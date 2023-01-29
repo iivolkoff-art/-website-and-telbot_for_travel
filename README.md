@@ -1,6 +1,6 @@
 Libraries used: aiogram, psycopg2
 
-Used technologies: Postgresql, Django
+Used technologies: Postgresql, Django, Bootstrap
 
 To successfully launch the project, you will need to install libraries and enter data about your sql server, Bot-token, and other parameters in the django settings.
 
